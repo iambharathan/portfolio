@@ -136,3 +136,12 @@ body {
 .field-input-focus {
   @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/20;
 }
+
+/* Hide Spline watermark/logo - clean approach */
+a[href*="spline.design"] {
+  display: none !important;
+}
+
+div:has(a[href*="spline.design"]) {
+  display: none !important;
+}
